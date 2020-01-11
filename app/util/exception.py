@@ -1,0 +1,2 @@
+class AuthSigninException(Exception):
+    pass

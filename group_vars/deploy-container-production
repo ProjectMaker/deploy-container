@@ -1,0 +1,9 @@
+container_name: deploy-container
+container_image: repo.treescale.com/thomas_michelet/deploy-container
+container_image_version: latest
+
+container_environment: {}
+
+container_ports:
+  - 5001:5001
+

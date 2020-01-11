@@ -1,0 +1,14 @@
+language: python
+
+install:
+  - pip install -r app/requirements.txt
+script:
+  - pytest
+
+deploy:
+  provider: script
+  script: bash docker-push.sh latest
+  on:
+    branch:
+      - master
+      - staging

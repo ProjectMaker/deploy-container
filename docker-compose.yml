@@ -1,0 +1,8 @@
+version: "3.6"
+services:
+  deploy-container:
+    build: .
+    volumes:
+      - ./app:/app
+    ports:
+      - 5001:5001
